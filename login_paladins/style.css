@@ -1,11 +1,12 @@
 body {
     margin: 0;
-    /* background-image: url(background_paladins.jpg); */
+    width: 100%;
+    /*background: url(background_paladins.jpg) center/cover;*/
+    background-color:#495f9c;
 }
 
-header > h1{
-    margin: 0;
-    text-align: center;
+body *{
+    box-sizing: border-box;
 }
 
 a{
@@ -38,16 +39,34 @@ a{
     flex-direction: column;
 }
 
-.card-left{
+.card-left {
     width: 50%;
-    box-shadow: 0px 0px 10px black;
+    background-color: #ebebf5ea;
+    box-shadow: 0px 0px 20px 5px #1b4c7c;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 40px 35px;
-    border-radius: 20px;
     gap: 20px;
+}
+
+.card-left > h1{
+    margin: 0;
+    font-size: 40pt;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color: #163b61;
+    text-shadow: 0px 0px 2px #0e2b47;
+}
+
+.card-left > h2{
+    margin: 0;
+    font-size: 25pt;
+    font-weight: 500;
+    letter-spacing: 10px;
+    color: #205c97;
+    text-shadow: 0px 0px 2px #0e2b47;
 }
 
 .card-left > p{
@@ -58,6 +77,13 @@ a{
     width: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
+}
+
+.textfield > label{
+    width: 100%;
+    outline: none;
+    font-size: 12pt;
 }
 
 .textfield > input{
@@ -66,7 +92,7 @@ a{
     padding: 8px;
     border-radius: 8px;
     border: none;
-    box-shadow:0px 0px 3px black;
+    box-shadow:0px 0px 3px #170730;
     outline: none;
 }
 
@@ -81,5 +107,11 @@ a{
 
 .card-right{
     width: 50%;
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 35px;
+    border-radius: 20px;
+    gap: 20px;
 }
