@@ -2,7 +2,7 @@ body {
     margin: 0;
     width: 100%;
     /*background: url(background_paladins.jpg) center/cover;*/
-    background-color:#495f9c;
+    background-color:#121e36;
 }
 
 body *{
@@ -11,6 +11,10 @@ body *{
 
 a{
     text-decoration: none;
+}
+
+li{
+    list-style: none;
 }
 
 .main-paladins{
@@ -28,6 +32,8 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    box-sizing: border-box;
+  
 }
 
 .right-login{
@@ -37,18 +43,22 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    gap: 15px;
+
 }
 
-.card-left {
+.card-left{
     width: 50%;
-    background-color: #ebebf5ea;
-    box-shadow: 0px 0px 20px 5px #1b4c7c;
+    background-color:#4A3D57;
+    box-shadow: 10px 10px 30px 10px #040308;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 40px 35px;
     gap: 20px;
+    box-sizing: border-box;
+    border-radius: 20px;
 }
 
 .card-left > h1{
@@ -56,17 +66,8 @@ a{
     font-size: 40pt;
     font-weight: 800;
     letter-spacing: 5px;
-    color: #163b61;
-    text-shadow: 0px 0px 2px #0e2b47;
-}
-
-.card-left > h2{
-    margin: 0;
-    font-size: 25pt;
-    font-weight: 500;
-    letter-spacing: 10px;
-    color: #205c97;
-    text-shadow: 0px 0px 2px #0e2b47;
+    color:#199393;
+    text-shadow: 0px 0px 5px #0e2b47;
 }
 
 .card-left > p{
@@ -78,31 +79,74 @@ a{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    margin: 5px 0px;
 }
 
 .textfield > label{
     width: 100%;
     outline: none;
-    font-size: 12pt;
+    font-size: 14pt;
+    padding: 4px;
+    color:#199393;
 }
 
 .textfield > input{
     width: 100%;
     box-sizing: border-box;
-    padding: 8px;
+    padding: 10px;
     border-radius: 8px;
     border: none;
-    box-shadow:0px 0px 3px #170730;
+    box-shadow:0px 0px 2px #170730;
     outline: none;
+    background-color: #144fa1be;
+}
+
+.textfield > input::placeholder{
+    color: rgb(169, 175, 180)
 }
 
 .btn-login{
     width: 100%;
-    padding: 8px;
-    border-radius: 8px;
+    border-radius: 5px;
     border: none;
-    box-shadow:0px 0px 3px black;
+    box-shadow:0px 0px 3px #102064;
     cursor: pointer;
+    background-color:#36b34bda;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 100;
+    letter-spacing: 3px;
+    height: 40px;
+    margin:15px;
+}
+
+.evil-mojo-logo{
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.evil-mojo-logo > img{
+    width: 70px;
+    height: 60px;
+}
+
+.right-login > h1{
+    font-size: 30pt;
+    color:#17558f;
+}
+
+.links-login{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item-1 > a{
+    color:#17558f;
 }
 
 .card-right{
@@ -111,7 +155,11 @@ a{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 40px 35px;
-    border-radius: 20px;
-    gap: 20px;
+    box-sizing: border-box;
+}
+
+.right-login > img{
+    width: 400px;
+    height: 200px;
+    filter: drop-shadow(0px 0px 10px #17558f);
 }
