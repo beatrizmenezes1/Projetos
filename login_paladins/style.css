@@ -1,10 +1,10 @@
 body {
     margin: 0;
     width: 100%;
-    background: url(img/paladins-fundo-2.png);
+    /* background: url(img/paladins-fundo-2.png);
     background-size: cover;
     background-repeat: no-repeat;
-    display: block;
+    display: block; */
     /* background-color:#121e36; */
 }
 
@@ -12,133 +12,61 @@ body *{
     box-sizing: border-box;
 }
 
-a{
-    text-decoration: none;
+h1{
+    margin: 0;
 }
 
-li{
-    list-style: none;
-}
-
-.main-paladins{
+.main-login{
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid black;
 }
 
-.right-login{
-    width: 50vw;
+.midle-login{
+    width: 30vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    box-sizing: border-box;
+    border: 2px solid black;
+
 }
 
 .left-login{
-    width: 50vw;
+    width: 35vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-sizing: border-box;
+    border: 2px solid black;
 }
 
-.card-right{
-    width: 40%;
-    height: 500px;
-    background-color:rgb(27 96 129 / 65%);
-    border: 1px solid rgba(29, 131, 179, 0.753);
-    box-shadow: 10px 10px 30px #021c25;
+.right-login{
+    width: 35vw;
+    height: 100vh;
+    display: flex;
+    border: 2px solid black;
+}
+
+.card-login{
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    padding: 40px 35px;
-    box-sizing: border-box;
-    gap: 20px;
-}
-
-.card-right > h1{
-    margin: 0;
-    font-size: 30pt;
-    font-weight: 800;
-    letter-spacing: 5px;
-    color:#eceff5;
-    text-shadow: 0px 0px 5px #000000;
-}
-
-.card-left{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-.card-letfd{
-    width: 500px;
-    height: 400px;
-    filter: drop-shadow(0px 0px 10px #10548b);
-}
-
-.card-left > h1{
-    color: rgb(179, 189, 235);
-    text-shadow: 0px 0px 10px #000000;
-    font-size: 30px;
-    background-color: #1143a779;
-    padding: 5px;
-    box-shadow: 0px 0px 10px black;
-    border-radius: 8px;
+    width: 60%;
+    height: 40%;
+    padding: 30px 25px;
+    box-shadow: 0px 0px 10px black; 
 }
 
 .textfield{
-    width: 100%;
     display: flex;
-    justify-content: center;
+    align-items: flex-start;
     flex-direction: column;
-    margin: 5px 0px;
-}
-
-.textfield > label{
-    width: 100%;
-    outline: none;
-    font-size: 16pt;
-    padding: 4px;
-    color:#e4ebfa;
-    text-shadow: 0px 0px 10px#000000;
-}
-
-.textfield > input{
-    width: 100%;
-    box-sizing: border-box;
-    padding: 10px;
-    border-radius: 3px;
-    border: none;
-    box-shadow:0px 0px 3px #080211;
-    outline: none;
-    background-color:#bcc9e4;
-}
-
-.textfield > input::placeholder{
-    color: rgb(30, 31, 32)
+    gap: 5px;
 }
 
 .btn-login{
-    width: 100%;
-    border-radius: 5px;
-    border: none;
-    box-shadow:0px 0px 3px #040a20;
-    cursor: pointer;
-    background-color:#36b34bda;
-    color: white;
-    text-transform: uppercase;
-    font-weight: 100;
-    letter-spacing: 3px;
-    height: 30px;
+    width: 60%;
 }
-
-/* LADO DIREITO */
-
