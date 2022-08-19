@@ -1,72 +1,164 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); */
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
 body {
     margin: 0;
     width: 100%;
-    /* background: url(img/paladins-fundo-2.png);
+    background: url(img/paladins-fundo-3.png);
     background-size: cover;
     background-repeat: no-repeat;
-    display: block; */
+    font-family: 'Open Sans', sans-serif;
+    text-size-adjust: 20px;
+    /* font-family: 'PT Sans Caption', sans-serif; */
+
     /* background-color:#121e36; */
 }
 
-body *{
+body * {
     box-sizing: border-box;
 }
 
-h1{
+h1 {
     margin: 0;
 }
 
-.main-login{
+/* PRINCIPAL */
+.main-login {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
-.midle-login{
+/* ----------------------------- */
+/* divisao da tela */
+/* MEIO */
+.midle-login {
     width: 30vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid black;
+    /* border: 2px solid black; */
+    flex-direction: column;
+    /* background-color: blanchedalmond; */
+    gap: 10px;
 
 }
 
-.left-login{
+/* ESQUEDO */
+.left-login {
     width: 35vw;
     height: 100vh;
     display: flex;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
-.right-login{
+/* DIREITO */
+.right-login {
     width: 35vw;
     height: 100vh;
     display: flex;
-    border: 2px solid black;
+    /* border: 2px solid black; */
 }
 
-.card-login{
+/* ----------------------------- */
+
+.elos-paladins{
+    height: 180px;
+    filter: drop-shadow(0px 0px 10px #1f0052);
+}
+
+.card-login {
     display: flex;
     justify-content: space-around;
     align-items: center;
     flex-direction: column;
-    width: 60%;
-    height: 40%;
-    padding: 30px 25px;
-    box-shadow: 0px 0px 10px black; 
+    width: 50%;
+    height: 45%;
+    padding: 35px 40px;
+    background-color: rgba(14, 58, 99, 0.527) ;
+    
+    /* background-color:#f1c9ca83; */
+    box-shadow: 0px 0px 10px #002452ad;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
-.textfield{
+.card-login>h1 {
+    text-align: center;
+    font-size: 28px;
+    color: #f7daba;
+    text-shadow: -1px -1px 1px rgb(179, 87, 13),
+        -1px 1px 1px rgb(78, 10, 133),
+        -1px -1px 1px rgb(206, 58, 13),
+        -1px 0px 1px rgb(14, 3, 71);
+}
+
+.textfield {
+    width: 100%;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     gap: 5px;
 }
 
-.btn-login{
-    width: 60%;
+.textfield>label {
+    font-size: 18px;
+    color:#f7daba;
+    letter-spacing: 1px;
+    text-shadow: -1px -1px 1px rgb(179, 87, 13),
+        -1px 1px 1px rgb(78, 10, 133),
+        -1px -1px 1px rgb(0, 0, 0),
+        -1px 0px 1px rgb(0, 0, 0);
+}
+
+.textfield>input {
+    display: flex;
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px rgb(80, 0, 145);
+    background-color: #FFF8C4;
+}
+
+.textfield>input::placeholder {
+    color: #aca04a;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.textfield > a{
+    font-size: 14px;
+    align-self:flex-end;
+    color:#f7daba;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.btn-login {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 2px black;
+    text-shadow: -1px -1px 1px rgb(179, 87, 13),
+        -1px 1px 1px rgb(78, 10, 133),
+        -1px -1px 1px rgb(0, 0, 0),
+        -1px 0px 1px rgb(0, 0, 0);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color:#f7daba;
+    background-color: #439840d0;
+    cursor: pointer;
 }
